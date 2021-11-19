@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+  <div class="jumbotron">
+    <h1>Manipulated data</h1>
+    <p>Data shown using EJS</p>
+
+    <h2>Male names</h2>
+    <ul>
+      <% maleData.forEach(function(row) { %>
+        <li>
+          <strong><%= row.name %></strong>
+          Male share <%= row.male_share %>,
+          Female share <%= row.female_share %>
+        </li>
+      <% }); %>
+    </ul>
+    <h2>Female names</h2>
+    <ul>
+      <% femaleData.forEach(function(row) { %>
+        <li>
+          <strong><%= row.name %></strong>
+          Male share <%= row.male_share %>,
+          Female share <%= row.female_share %>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

@@ -31,6 +31,18 @@
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="views\pages\data.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\pages\index.ejs" />
+    <Content Include="views\partials\footer.ejs" />
+    <Content Include="views\partials\head.ejs" />
+    <Content Include="views\partials\header.ejs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="views\" />
+    <Folder Include="views\pages\" />
+    <Folder Include="views\partials\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
